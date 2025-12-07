@@ -29,12 +29,12 @@ jobs:
             --exclude ".github/*" \
             --exclude "readme.md" \
             --exclude ".gitignore"
-          
+
           # Set proper content types for better loading
           aws s3 cp s3://awswithdevcom.pokhrelankit.com.np/style/style.css s3://awswithdevcom.pokhrelankit.com.np/style/style.css \
             --content-type "text/css" \
             --metadata-directive REPLACE
-          
+
           aws s3 cp s3://awswithdevcom.pokhrelankit.com.np/js/index.js s3://awswithdevcom.pokhrelankit.com.np/js/index.js \
             --content-type "application/javascript" \
             --metadata-directive REPLACE
